@@ -1,0 +1,7 @@
+Sitemap: https://www.themasterlabs.com/sitemap.xml
+
+User-agent: Googlebot
+Disallow: /nogooglebot/
+
+User-agent: *
+Allow: /

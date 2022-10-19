@@ -1,0 +1,181 @@
+﻿@import "../../../styles/colors.scss";
+@import "../../../styles/font-mixins";
+
+
+.main-hero {
+  margin-top: 40px;
+  margin-bottom: 35px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  &__pretitle {
+    max-width: 315px;
+    margin-bottom: 60px;
+    font-weight: 800 !important;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    @include pretitle-font($color:$color-grey-normal);
+  }
+
+  &__posttitle {
+    max-width: 512px;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    @include posttitle-font($color:$color-grey-normal);
+  }
+  
+  &__title {
+    max-width: 315px;
+    // height: 210px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  &__animation {
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: -125px;
+  }
+
+  &__larger-animation {
+    display: block;
+    position: relative;
+    z-index: -1;
+    top: -175px;
+    transform: scale(0.75);
+  }
+}
+
+
+
+@media only screen and (min-width: 375px) {
+  .main-hero {
+
+    &__title {
+      max-width: none;
+    }
+
+    &__animation {
+      margin-bottom: -100px;
+    }
+
+    &__larger-animation {
+      margin-left: 25px;
+      transform: scale(0.9);
+    }
+  }
+}
+
+
+
+@media only screen and (min-width: 450px) {
+  .main-hero {
+
+    &__title {
+      width: 370px;
+      // height: 170px;
+    }
+
+    &__animation {
+      margin-bottom: -75px;
+    }
+
+    &__larger-animation {
+      margin-left: 70px;
+      transform: scale(1);
+    }
+  }
+}
+
+
+
+@media only screen and (min-width: 800px) {
+  .main-hero {
+    margin-bottom: 50px;
+
+    &__title {
+      width: 500px;
+      // height: 200px;
+    }
+
+    &__animation {
+      margin-top: 75px;
+      margin-bottom: -125px;
+    }
+
+
+    &__larger-animation {
+      display: block;
+      position: relative;
+      top: -200px;
+      margin-left: 40px;
+    }
+  }
+}
+
+
+
+@media only screen and (min-width: 850px) {
+  .main-hero {
+    margin-top: 100px;
+    margin-bottom: 120px;
+
+    &__animation {
+      max-width: 780px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &__larger-animation {
+      margin-left: 21px;
+    }
+  }
+}
+
+
+
+@media only screen and (min-width: 1250px) {
+  .main-hero {
+    margin-bottom: 200px;
+
+    &__title {
+      width: 700px;
+      // height: 225px;
+      padding-top: 0;
+    }
+
+    &__animation {
+      max-width: 1030px;
+      top:-200px;
+      margin-top: 150px;
+      margin-bottom: -350px;
+    }
+  }
+}
+
+
+
+@media only screen and (min-width: 1400px) {
+  .main-hero {
+    margin-top: 150px;
+    
+    &__animation {
+      left: -75px;
+    }
+  }
+}
+
+
+
+@media only screen and (min-width: 1600px) {
+  .main-hero {
+
+    &__animation {
+      left: -135px;
+    }
+  }
+}

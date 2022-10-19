@@ -1,0 +1,198 @@
+﻿@import "../../../styles/font-mixins.scss";
+@import "../../../styles/colors.scss";
+
+
+.sister-companies {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: $color-blue-very-light;
+  padding: 40px;
+
+  &-list {
+    display: flex;
+    flex-direction: column;
+
+    &-item {
+      display: flex;
+      padding: 10px;
+      background: white;
+      box-shadow: -15px 15px 0 $color-blue-mid;
+      margin: 10px;
+
+      &__image-link {
+
+        img {
+          height: 34px;
+        }
+
+        &--tmla,
+        &--tmc {
+          @extend .sister-companies-list-item__image-link;
+        }
+
+        &--tmla {}
+
+        &--tmc {}
+      }
+
+      &__twin-image {
+        display: none;
+      }
+    }
+  }
+
+  &__title {
+    @include subtitle-font;
+    margin-bottom: 30px;
+  }
+
+  &__arrow {
+    position: absolute;
+    height: 95px;
+
+    &--left,
+    &--right {
+      @extend .sister-companies__arrow;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &--left {}
+
+    &--right {}
+  }
+
+
+}
+
+
+
+@media only screen and (min-width: 500px) {
+  .sister-companies {
+
+    &__arrow {
+      height: 120px;
+
+      &--left {}
+
+      &--right {}
+    }
+
+
+    &-list {
+      &-item {
+        &__image-link {
+
+          img {
+            height: 40px;
+          }
+
+          &--tmla {}
+
+          &--tmc {}
+        }
+
+        &__twin-image {
+          display: inline;
+
+          &--mobile {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+@media only screen and (min-width: 600px) {
+  .sister-companies {
+
+    &__arrow {
+
+      &--left {}
+
+      &--right {}
+    }
+
+    &-list {
+      &-item {
+        &__image-link {
+
+          &--tmla {}
+
+          &--tmc {}
+        }
+      }
+    }
+  }
+}
+
+
+
+@media only screen and (min-width: 800px) {
+  .sister-companies {
+    padding: 150px 0;
+
+    &__title {
+      max-width: 780px;
+      margin-bottom: 40px;
+    }
+
+    &__arrow {
+      height: 150px;
+
+      &--left {}
+
+      &--right {}
+    }
+
+    &-list {
+      &-item {
+        padding: 30px;
+        margin: 20px;
+        &__image-link {
+
+          img {
+            height: 60px;
+          }
+
+          &--tmla {}
+
+          &--tmc {}
+        }
+      }
+    }
+  }
+}
+
+
+
+@media only screen and (min-width: 1250px) {
+  .sister-companies {
+
+
+    &__arrow {
+
+      &--left {}
+
+      &--right {}
+    }
+
+    &-list {
+      flex-direction: row;
+
+      &-item {
+        &__image-link {
+
+          &--tmla {}
+
+          &--tmc {}
+        }
+      }
+    }
+  }
+}

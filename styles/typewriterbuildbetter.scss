@@ -1,0 +1,131 @@
+﻿@import "colors.scss";
+
+
+.buildbetterword-blue{
+    color: $color-blue-normal;
+}
+
+.typewriter-actualcursor-blue{
+    color: $color-blue-normal;
+}
+
+.typewriterperson-blue{
+    color: $color-blue-normal;
+    background: $color-blue-very-light;
+}
+
+.buildbetterword-purple{
+    color: $color-purple-normal;
+    hyphens: manual;
+}
+
+.typewriter-actualcursor-purple{
+    color: $color-purple-normal;
+}
+
+.typewriterperson-purple{
+    color: $color-purple-normal;
+    background-color: $color-purple-very-light;
+}
+
+
+.buildbetterword-yellow{
+    color: $color-yellow-normal;
+}
+
+.typewriter-actualcursor-yellow{
+    color: $color-yellow-normal;
+}
+
+.typewriterperson-yellow{
+    color: $color-yellow-normal;
+    background: $color-yellow-very-light;
+}
+
+.buildbetterword-red{
+    color: $color-red-normal;
+}
+
+.typewriter-actualcursor-red{
+    color: $color-red-normal;
+}
+
+.typewriterperson-red{
+    color: $color-red-normal;
+    background-color: $color-red-very-light;
+}
+
+.buildbetterword-green{
+    color: $color-green-normal;
+}
+
+.typewriter-actualcursor-green{
+    color: $color-green-normal;
+}
+
+.typewriterperson-green{
+    color: $color-green-normal;
+    background-color: $color-green-very-light;
+}
+
+
+
+.Typewriter__cursor{
+    animation:none!important;}
+
+
+.typewriter-actualcursor{
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: Typewriter-cursor;
+    font-family: "Atlas Grotesk", sans-serif;
+    font-weight: 200;
+}
+
+.noanimcursor{
+    animation:none!important;
+}
+
+
+.typewriterperson{
+    animation: none;
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 20px;
+    padding: 0px 20px;
+    line-height: 35px;
+    font-weight: 200;
+    box-shadow: 0 1px 15px rgba(255,255,255,0.5);
+
+    &--shifted {
+        @extend .typewriterperson;
+        right: 10px;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .Typewriter__cursor{
+        position: relative;
+    }
+
+    .typewriterperson{
+        position: absolute;
+        top: 75px;
+        right: -10px;
+        
+        &--shifted {
+            right: 10px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1250px) {
+    .typewriterperson{
+        right: -10px;
+    }
+}

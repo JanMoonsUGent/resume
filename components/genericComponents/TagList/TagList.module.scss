@@ -1,0 +1,23 @@
+﻿@import "../../../styles/font-mixins.scss";
+@import "../../../styles/colors.scss";
+
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  
+  &--centered {
+    @extend .tag-list;
+  }
+}
+
+
+
+@media only screen and (min-width: 850px) {
+  .tag-list {
+    &--centered {
+      justify-content: center;
+    }
+  }
+}

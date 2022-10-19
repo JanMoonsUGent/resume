@@ -1,0 +1,15 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 405 405">
+    <defs>
+        <clipPath id="clip-path">
+            <rect id="Mask" width="405" height="405" transform="translate(0.5)" fill="#fff" stroke="#e1e4ea" stroke-miterlimit="10" stroke-width="1"/>
+        </clipPath>
+        <clipPath id="clip-path-2">
+            <path id="Mask-2" data-name="Mask" d="M187,366c103.277,0,187-81.932,187-183S290.277,0,187,0,0,81.932,0,183A179.77,179.77,0,0,0,40.015,296.144c7.209,8.956-20.939,52.657-12.173,60.151,8.665,7.407,54.227-21.376,64.189-15.617A189.235,189.235,0,0,0,187,366Z"/>
+        </clipPath>
+    </defs>
+    <g id="Bitmap_Copy_8" data-name="Bitmap Copy 8" transform="translate(-0.5)" clip-path="url(#clip-path)">
+        <g id="Group_42_Copy_4" data-name="Group 42 Copy 4" transform="translate(146.5 -221)">
+            <path id="Mask-3" data-name="Mask" d="M187,366c103.277,0,187-81.932,187-183S290.277,0,187,0,0,81.932,0,183A179.77,179.77,0,0,0,40.015,296.144c7.209,8.956-20.939,52.657-12.173,60.151,8.665,7.407,54.227-21.376,64.189-15.617A189.235,189.235,0,0,0,187,366Z"/>
+        </g>
+    </g>
+</svg>

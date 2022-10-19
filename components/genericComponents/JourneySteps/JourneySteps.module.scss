@@ -1,0 +1,60 @@
+﻿@import "../../../styles/font-mixins.scss";
+@import "../../../styles/colors.scss";
+
+
+.journey-steps {
+  
+  &__title {
+    margin: 0 17px 25px 18px;
+    @include title-font;
+    text-align: center;
+  }
+}
+
+
+
+@media only screen and (min-width: 500px) {
+  .journey-steps {
+    
+    &__title {
+      width: 430px;
+      margin: 0 auto 35px 40px;
+    }
+  }
+}
+
+
+
+@media only screen and (min-width: 800px) {
+  .journey-steps {
+
+    &__title {
+      width: 495px;
+      margin-bottom: 45px;
+    }
+  }
+}
+
+
+
+@media only screen and (min-width: 850px) {
+  .journey-steps {
+
+    &__title {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+
+
+@media only screen and (min-width: 1250px) {
+  .journey-steps {
+
+    &__title {
+      width: 700px;
+      margin-bottom: 60px;
+    }
+  }
+}

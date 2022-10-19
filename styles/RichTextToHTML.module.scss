@@ -1,0 +1,158 @@
+﻿@import "font-mixins.scss";
+@import "colors.scss";
+
+
+.bi-colored-rich-title {
+  
+  &__text {
+    @include title-font($color-default);
+  }
+  
+  &__highlighted-text {
+    
+    &--blue {
+      @include title-font($color-blue-normal)
+    }
+    &--purple {
+      @include title-font($color-purple-normal)
+    }
+    &--yellow {
+      @include title-font($color-yellow-normal)
+    }
+    &--red {
+      @include title-font($color-red-normal)
+    }
+    &--green {
+      @include title-font($color-green-normal)
+    }
+  }
+}
+
+
+.rich-text {
+
+  &__highlighted-text {
+    font-weight: 800;
+    color:$color-blue-normal;
+  }
+  
+  &__link {
+    word-wrap: break-word;
+    color: $color-blue-normal;
+    
+    > i {
+      padding: 5px 15px 4px;
+      border-radius: 50px;
+      font-style: normal;
+      background-color: $color-blue-ultra-light;
+    }
+    
+    > i:before {
+      display: inline-block;
+      position: relative;
+      top: 3px;
+      width: 20px;
+      height: 20px;
+      margin-right: 5px;
+      content: "";
+      background-image: url("../public/images/tmc-logo@40x.png");
+      background-size: 20px 20px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 40px;
+    @include text-font;
+    
+    i > a {
+      padding: 5px 15px 4px;
+      border-radius: 50px;
+      font-style: normal;
+      background-color: $color-blue-ultra-light;
+      
+      &:before {
+        display: inline-block;
+        position: relative;
+        top: 3px;
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+        content: "";
+        background-image: url("../public/images/tmc-logo@40x.png");
+        background-size: 20px 20px;
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    @include title-font;
+  }
+
+  &__subtitle {
+    margin-bottom: 20px;
+    @include small-title-font;
+  }
+
+  &__small-title {
+    margin-bottom: 15px;
+    @include very-small-title-font;
+    font-weight: 700;
+  }
+
+  &__ordered-list {
+    @include text-font;
+
+    > li {
+      padding-left: 8px;
+      margin-left: 34px;
+    }
+  }
+
+  &__unordered-list {
+    list-style: none;
+
+    > li {
+      display: flex;
+
+      &:before {
+        content: "\2022";
+        flex-shrink: 0;
+        width: 22px;
+        margin-left: 12px;
+        @include text-font($color-blue-normal);
+        font-weight: 700;
+      }
+    }
+  }
+
+  &__image {
+    max-width: 100%;
+    padding: 30px 10px 30px 0;
+
+    &--small {
+      @extend .rich-text__image;
+    }
+  }
+
+  &__testimonial-card {
+    position: relative;
+    z-index: -1;
+  }
+}
+
+
+@media only screen and (min-width: 800px) {
+  .rich-text {
+
+    &__image {
+      max-width: calc(100% + 130px);
+      margin-left: -60px;
+      padding: 40px 10px 40px 0;
+
+      &--small {
+        margin-left: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,359 @@
+﻿@import "../../../styles/font-mixins.scss";
+
+
+.hero-people-collection {
+  padding-top: 0;
+  padding-bottom: 50px;
+  background-color: transparent;
+  height:300px;
+
+  &__visual-container {
+    position:relative
+  }
+
+  &__visual-item {
+    height:100px;
+    width: 80px;
+    background-color: white;
+    border: 2px solid #001C54;
+    border-radius: 14px;
+    position: absolute;
+    object-fit: cover;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  &__visual-item-one {
+    height: 110px;
+    width: 87px;
+    left: -45px;
+    top: 170px;
+    z-index: 1;
+  }
+
+  
+  &__visual-item-two {
+    height: 71px;
+    width: 55px;
+    left: 65px;
+    top: 245px;
+    z-index: 2;
+  }
+
+  
+  &__visual-item-three {
+    height: 64px;
+    width: 51px;
+    left: -9px;
+    top: 286px;
+  }
+
+
+  &__visual-item-deco-one{
+    left: 24px;
+    top: 172px;
+    z-index: 10;
+  }
+
+  &__visual-item-deco-two{
+
+
+    left: 230px;
+    top: 314px;
+    z-index: 10;
+  }
+
+  &__visual-item-deco-three{
+
+
+    left: 285px;
+    top: 190px;
+    z-index: 10;
+  }
+
+  &__visual-item-deco-four{
+    left: 168px;
+    top: 249px;
+    z-index: 10;
+  }
+  
+  &__visual-item-deco{
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    object-fit: contain;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}
+
+
+@media only screen and (min-width: 800px) {
+  .hero-people-collection {
+    &__visual-item-one {
+      height: 154px;
+      width: 125px;
+      left: 0;
+      top: 170px;
+      z-index: 1;
+    }
+
+    
+    &__visual-item-two {
+      height: 104px;
+      width: 84px;
+      left: 144px;
+      top: 245px;
+      z-index: 2;
+    }
+
+    
+    &__visual-item-three {
+      height: 78px;
+      width: 63px;
+      left: 71px;
+      top: 347px;
+    }
+
+    
+    
+
+    &__visual-item-deco{
+      height: 46px;
+      width: 46px;
+    }
+
+    &__visual-item-deco-one{
+
+      left: 105px;
+      top: 172px;
+      z-index: 10;
+    }
+  
+    &__visual-item-deco-two{
+      left: -20px;
+      top: 400px;
+      z-index: 10;
+    }
+  
+    &__visual-item-deco-three{
+  
+      left: 50px;
+      top: 50px;
+      z-index: 10;
+    }
+  
+    &__visual-item-deco-four{
+      left: 246px;
+      top: 249px;
+      z-index: 10;
+    }
+  
+    
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+
+  .hero-people-collection {
+    &__visual-item-one {
+      height: 154px;
+      width: 125px;
+      left: 0px;
+      top: 170px;
+      z-index: 1;
+    }
+
+    
+    &__visual-item-two {
+      height: 104px;
+      width: 84px;
+      left: 144px;
+      top: 245px;
+      z-index: 2;
+    }
+
+    
+    &__visual-item-three {
+      height: 78px;
+      width: 63px;
+      left: 71px;
+      top: 347px;
+    }
+
+    
+    
+
+    &__visual-item-deco{
+      height: 46px;
+      width: 46px;
+    }
+
+    &__visual-item-deco-one{
+
+      left: 105px;
+      top: 172px;
+      z-index: 10;
+    }
+  
+    &__visual-item-deco-two{
+  
+      left: -20px;
+      top: 400px;
+      z-index: 10;
+    }
+  
+    &__visual-item-deco-three{
+      left: 50px;
+      top: 50px;
+      z-index: 10;
+    }
+  
+    &__visual-item-deco-four{
+      left: 246px;
+      top: 249px;
+      z-index: 10;
+    }
+  
+    
+  }
+}
+
+
+
+
+@media only screen and (min-width: 1250px) {
+  .hero-people-collection {
+    &__visual-item-one {
+      height: 154px;
+      width: 125px;
+      left: 0px;
+      top: 170px;
+      z-index: 1;
+    }
+
+    
+    &__visual-item-two {
+      height: 104px;
+      width: 84px;
+      left: 144px;
+      top: 245px;
+      z-index: 2;
+    }
+
+    
+    &__visual-item-three {
+      height: 78px;
+      width: 63px;
+      left: 71px;
+      top: 347px;
+    }
+
+    
+    
+
+    &__visual-item-deco{
+      height: 46px;
+      width: 46px;
+    }
+
+    &__visual-item-deco-one{
+
+      left: 105px;
+      top: 172px;
+      z-index: 10;
+    }
+  
+    &__visual-item-deco-two{
+  
+      left: -20px;
+      top: 400px;
+      z-index: 10;
+    }
+  
+    &__visual-item-deco-three{
+  
+      left: 50px;
+      top: 50px;
+      z-index: 10;
+    }
+  
+    &__visual-item-deco-four{
+      left: 246px;
+      top: 249px;
+      z-index: 10;
+    }
+  
+    
+  }
+}
+
+
+@media only screen and (min-width: 1440px) {
+//   .hero-people-collection {
+//   &__visual-item-one {
+//     height:125px;
+//     width: 100px;
+//     left:0px;
+//     top:258px;
+//     z-index: 1;
+//   }
+
+  
+//   &__visual-item-two {
+//     height: 209px;
+//     width: 170px;
+//     left: 90px;
+//     top: 136px;
+//     z-index: 0;
+//   }
+
+  
+//   &__visual-item-three {
+//     height: 149px;
+//     width: 184px;
+//     left: 325px;
+//     top: 55px;
+//   }
+
+  
+  
+
+//   &__visual-item-deco{
+//     height: 60px;
+//     width: 60px;
+//   }
+
+//   &__visual-item-deco-one{
+
+//     left: 237px;
+//     top: 149px;
+//     z-index: 10;
+//   }
+
+//   &__visual-item-deco-two{
+
+//     left: 123px;
+//     top: 424px;
+//     z-index: 10;
+//   }
+
+//   &__visual-item-deco-three{
+
+//     left: 833px;
+//     top: 205px;
+//     z-index: 10;
+//   }
+
+//   &__visual-item-deco-four{
+
+//     left: 521px;
+//     top: 0;
+//     z-index: 10;
+//   }
+
+  
+// }
+}

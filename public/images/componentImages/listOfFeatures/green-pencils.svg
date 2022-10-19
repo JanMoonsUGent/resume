@@ -1,0 +1,23 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160">
+    <defs>
+        <clipPath id="clip-path">
+            <rect id="Mask" width="160" height="160" fill="#b5ece5"/>
+        </clipPath>
+    </defs>
+    <g id="Group_21_Copy_5" data-name="Group 21 Copy 5" transform="translate(-70 -28)">
+        <rect id="Mask-2" data-name="Mask" width="160" height="160" transform="translate(70 28)" fill="#b5ece5"/>
+        <g id="Group_21_Copy_5-2" data-name="Group 21 Copy 5" transform="translate(70 28)" clip-path="url(#clip-path)">
+            <g id="Group_21_Copy_5-3" data-name="Group 21 Copy 5" transform="translate(189 -37)">
+                <g id="Group_44" data-name="Group 44" transform="translate(-188 37)" style="isolation: isolate">
+                    <g id="Group_45" data-name="Group 45" transform="translate(68.872 22.171)">
+                        <path id="Path_8" data-name="Path 8" d="M3.36,1.043l17.716-30.6,18.14,30.6c3.581,6.072,3.095,7.294,3.095,15.473V105.37A14.809,14.809,0,0,1,27.5,120.179H14.809A14.809,14.809,0,0,1,0,105.37V16.517C0,8.338-.343,7,3.36,1.043Z" transform="translate(0.008 29.557)" fill="#33dfc8" stroke="#001c54" stroke-linejoin="round" stroke-width="2"/>
+                    </g>
+                    <g id="Group_44-2" data-name="Group 44" transform="translate(59.786 61.828)">
+                        <path id="Path_8-2" data-name="Path 8" d="M2.468-7.061l13.024-22.5,13.336,22.5C31.46-2.6,31.1-1.7,31.1,4.314v65.32A10.887,10.887,0,0,1,20.216,80.521H10.885A10.887,10.887,0,0,1,0,69.634V4.314C0-1.7-.255-2.679,2.468-7.061Z" transform="translate(0.008 29.557)" fill="#33dfc8" stroke="#001c54" stroke-linejoin="round" stroke-width="2"/>
+                        <path id="Polygon_1" data-name="Polygon 1" d="M5,0l5,9H0Z" transform="translate(10.514 10.172)" fill="#fff" stroke="#001c54" stroke-linejoin="round" stroke-width="2"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

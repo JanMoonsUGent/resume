@@ -1,0 +1,85 @@
+﻿@import "../../../styles/font-mixins.scss";
+@import "../../../styles/colors.scss";
+
+
+.position-page {
+
+  &__main-content {
+    display: grid;
+    grid-template-columns: 0 auto;
+    max-width: 1440px;
+  }
+
+  &__page-navigator {
+    grid-row: 1 / 6;
+    grid-column: 1 / 2;
+  }
+
+  &__short-description, &__mountain-philosophy, &__what-we-value, &__helpful-skills, &__what-we-offer {
+    grid-column: 2 / 3;
+  }
+}
+
+
+
+@media only screen and (min-width: 500px) {
+  .position-page {}
+}
+
+
+
+@media only screen and (min-width: 850px) {
+  .position-page {
+
+    &__main-content {
+      grid-template-columns: auto 228px 552px auto;
+      max-width: none;
+    }
+
+    &__page-navigator {
+      grid-column: 2 / 3;
+      margin-top: 35px;
+    }
+
+    &__short-description, &__mountain-philosophy, &__what-we-value, &__helpful-skills, &__what-we-offer {
+      grid-column: 3 / 4;
+    }
+  }
+}
+
+
+
+@media only screen and (min-width: 1250px) {
+  .position-page {
+
+    &__main-content {
+      grid-template-columns: auto 301px 729px auto;
+    }
+
+    &__page-navigator {
+      margin-top: 45px;
+    }
+  }
+}
+
+
+
+@media only screen and (min-width: 1400px) {
+  .position-page {
+
+    &__main-content {
+      grid-template-columns: auto 345px 835px auto;
+    }
+  }
+}
+
+
+
+@media only screen and (min-width: 1600px) {
+  .position-page {
+
+    &__main-content {
+      grid-template-columns: auto 380px 920px auto;
+    }
+  }
+}

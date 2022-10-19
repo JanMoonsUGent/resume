@@ -1,0 +1,10 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160">
+    <g id="Group_38" data-name="Group 38" transform="translate(-517 -828.5)">
+        <g id="Group_21_Copy_3" data-name="Group 21 Copy 3" transform="translate(517 828.5)">
+            <rect id="Mask_Copy_11" data-name="Mask Copy 11" width="160" height="160" fill="#ffefad"/>
+        </g>
+        <path id="Subtraction_3" data-name="Subtraction 3" d="M48.143,96.265A48.144,48.144,0,0,1,29.4,3.783a48.146,48.146,0,0,1,37.478,88.7A47.861,47.861,0,0,1,48.143,96.265Z" transform="translate(645.471 956.633) rotate(180)" fill="#ffcf11" stroke="#001c54" stroke-width="2"/>
+        <path id="Subtraction_5" data-name="Subtraction 5" d="M50.248,36.579H0a53.619,53.619,0,0,1,4.016-20.12A52.574,52.574,0,0,1,14.713,0L50.249,36.579h0Z" transform="translate(654.132 883.764) rotate(120)" fill="#ffcf11" stroke="#001c54" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <path id="Subtraction_7" data-name="Subtraction 7" d="M9.434,6.848H0A10.007,10.007,0,0,1,.754,3.081,9.836,9.836,0,0,1,2.762,0L9.434,6.848h0Z" transform="translate(617.845 897.159) rotate(120)" fill="#fefefe" stroke="#001c54" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+</svg>

@@ -1,0 +1,363 @@
+﻿@import "../../../styles/font-mixins.scss";
+@import "../../../styles/colors.scss";
+
+
+
+.image-carousel {
+
+  &__images-container {
+    position: relative;
+    width: 100%;
+    margin-top: 90px;
+  }
+
+  &__images {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    -ms-overflow-style: none;  /* Hide scrollbar in IE and Edge */
+    scrollbar-width: none;  /* Hide scrollbar in Firefox */
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  &__image-container {
+    flex-shrink: 0;
+    list-style: none;
+    width: 250px;
+    margin-right: 15px;
+  }
+  
+  &__image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  &__description {
+    width: 100%;
+    height: calc(100% - 150px);
+    // for some reason this margin-top is needed. Otherwise there is a gap
+    margin-top: -4px;
+    padding: 10px;
+    @include very-bold-text-font;
+    background-color: white;
+  }
+
+  &__arrow-left, &__arrow-right {
+    position: absolute;
+    top: -70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    padding: 10px;
+    border-radius: 60px;
+    border: 2px solid $color-default;
+    font-size: 30px;
+    color: $color-default;
+    background-color: white;
+    cursor: pointer;
+
+    &:hover {
+      color: white;
+      background-color: $color-default;
+    }
+  }
+
+  &__arrow-left {
+    left: 28px;
+  }
+
+  &__arrow-right {
+    left: 98px;
+  }
+}
+
+
+
+@media only screen and (min-width: 375px) {
+  .image-carousel {
+
+    &__image-container {
+      width: 300px;
+      margin-right: 20px;
+    }
+
+    &__image {
+      height: 180px;
+    }
+
+    &__description {
+      height: calc(100% - 180px);
+    }
+  }
+}
+
+
+
+@media only screen and (min-width: 500px) {
+  .image-carousel {
+
+    &__image-container {
+      width: 410px;
+    }
+
+    &__image {
+      height: 246px;
+    }
+
+    &__description {
+      height: calc(100% - 246px);
+    }
+  }
+}
+
+
+
+@media only screen and (min-width: 800px) {
+  .image-carousel {
+
+    &__images-container {
+      width: 700px;
+      margin-top: 0;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &__image-container {
+      width: 700px;
+      margin-right: 25px;
+    }
+
+    &__image {
+      height: 420px;
+    }
+
+    &__description {
+      height: calc(100% - 420px);
+      padding: 20px;
+    }
+    
+    &__arrow-left, &__arrow-right {
+     top: calc(50% - 26px);
+    }
+
+    &__arrow-left {
+      left: -28px;
+    }
+
+    &__arrow-right {
+      left: auto;
+      right: -28px;
+    }
+  }
+}
+
+
+
+@media only screen and (min-width: 850px) {
+  .image-carousel {
+
+    &__images-container {
+      width: 725px;
+    }
+
+    &__image-container {
+      width: 725px;
+    }
+
+    &__image {
+      height: 435px;
+    }
+
+    &__description {
+      height: calc(100% - 435px);
+    }
+  }
+}
+
+
+
+@media only screen and (min-width: 1250px) {
+  .image-carousel {
+
+    &__images-container {
+      width: 975px;
+    }
+
+    &__image-container {
+      position: relative;
+      width: 975px;
+      margin-right: 35px;
+    }
+
+    &__image {
+      height: 585px;
+    }
+
+    &__description {
+      position: absolute;
+      bottom: 4px;
+      left: 0;
+      width: 35%;
+      height: auto;
+      margin-top: auto;
+      padding: 40px;
+    }
+  }
+}
+
+
+
+@media only screen and (min-width: 1400px) {
+  .image-carousel {
+
+    &__arrow-left {
+      left: -102px;
+    }
+
+    &__arrow-right {
+      right: -102px;
+    }
+  }
+}
+
+
+
+@media only screen and (min-width: 1600px) {
+  .image-carousel {
+
+    &__arrow-left {
+      left: -162px;
+    }
+
+    &__arrow-right {
+      right: -162px;
+    }
+  }
+}
+
+.imagecarouselwrapper {
+  margin-bottom: 50px;
+  padding: 20px 0 25px 18px;
+  background-color: $color-blue-normal;
+  
+  &__title {
+    margin-bottom: 25px;
+    margin-right: 17px;
+    @include title-font(white);
+  }
+  
+  &__subtitle {
+    margin-bottom: 5px;
+    margin-right: 17px;
+    @include very-small-title-font(white)
+  }
+  
+  &__link {
+    display: block;
+    max-width: fit-content;
+    margin-bottom: 20px;
+    margin-right: 17px;
+    padding: 5px 15px;
+    border-radius: 50px;
+    font-family: "Brown LL", sans-serif;
+    font-weight: 800;
+    background-color: $color-yellow-light;
+  }
+}
+
+
+
+@media only screen and (min-width: 500px) {
+  .imagecarouselwrapper {
+    margin-bottom: 60px;
+    padding: 25px 0 30px 40px;
+    
+    &__title {
+      margin-bottom: 25px;
+      margin-right: 40px;
+    }
+    
+    &__subtitle {
+      margin-right: 40px;
+    }
+    
+    &__link {
+      margin-bottom: 30px;
+      margin-right: 40px;
+    }
+  }
+}
+
+
+
+@media only screen and (min-width: 800px) {
+  .imagecarouselwrapper {
+    margin-bottom: 85px;
+    padding: 40px 0 60px 0;
+
+    &__title {
+      max-width: 700px;
+      margin-bottom: 30px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+
+    &__subtitle {
+      max-width: 700px;
+      margin-bottom: 10px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+
+    &__link {
+      margin-bottom: 50px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+
+
+@media only screen and (min-width: 850px) {
+  .imagecarouselwrapper {
+
+    &__title {
+      max-width: 725px;
+    }
+
+    &__subtitle {
+      max-width: 725px;
+    }
+  }
+}
+
+
+
+@media only screen and (min-width: 1250px) {
+  .imagecarouselwrapper {
+    margin-bottom: 105px;
+    padding: 50px 0 75px 0;
+
+    &__title {
+      max-width: 975px;
+      margin-bottom: 35px;
+    }
+
+    &__subtitle {
+      max-width: 975px;
+    }
+
+    &__link {
+      margin-bottom: 55px;
+    }
+  }
+}

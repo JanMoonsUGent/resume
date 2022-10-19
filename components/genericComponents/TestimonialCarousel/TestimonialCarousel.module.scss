@@ -1,0 +1,261 @@
+@import "../../../styles/font-mixins.scss";
+@import "../../../styles/colors.scss";
+
+
+.testimonial-carousel {
+  list-style: none;
+  background-color: $color-purple-very-light;
+  position: relative;
+  display: flex;
+  min-height: 550px;
+
+  &--mobile {
+    @extend .testimonial-carousel;
+    flex-direction: column;
+
+    &--transparent {
+      @extend .testimonial-carousel--mobile;
+      background-color: white;
+    }
+  }
+  
+  &--transparent {
+    @extend .testimonial-carousel;
+    background-color: white;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5%;
+
+    &--mobile {
+      @extend .testimonial-carousel__buttons;
+      flex-direction: row;
+      justify-content: flex-start;
+      margin-left: 11px;
+    }
+    
+    &--for-testimonials-page {
+      @extend .testimonial-carousel__buttons;
+    }
+    
+    &--for-home-page {
+      @extend .testimonial-carousel__buttons;
+    }
+
+    &--top-accent {
+      @extend .testimonial-carousel__buttons;
+    }
+  }
+
+  &__button-back, &__button-next {
+    border: solid 2px $color-default;
+    font-size: 36px;
+    color: $color-purple-very-light;
+    background-color: $color-default;
+    width: 70px;
+    height: 70px;
+    margin-right: -18px;
+    padding-top: 8px;
+    padding-right: 3px;
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    transform: scale(0.6);
+    align-items: center;
+
+    &:hover {
+      color: $color-default;
+      background-color: $color-purple-very-light;
+      border: solid 2px $color-default;
+    }
+
+    &--transparent {
+      @extend .testimonial-carousel__button-back;
+      border-color: $color-default;
+      background-color: $color-default;
+      color: white;
+
+      &:hover {
+        color: $color-default;
+        background-color: white;
+        border: solid 2px $color-default;
+      }
+    }
+  }
+
+  &__button-next {
+    padding-right: 0;
+    padding-left: 3px;
+  }
+
+  &__slider {
+    flex: 1 0 auto;
+  }
+}
+
+
+
+@media only screen and (min-width: 375px) {
+  .testimonial-carousel {
+    &__buttons {
+      padding-top: 8%;
+    }
+  }
+}
+
+
+
+@media only screen and (min-width: 500px) {
+  .testimonial-carousel {
+    max-width: 100%;
+  }
+}
+
+
+
+@media only screen and (min-width: 800px) {
+  .testimonial-carousel {
+    
+    &--for-testimonials-page {
+      // Do not extend this from .testimonial-carousel !
+      min-height: 400px;
+      height: 425px;
+    }
+    
+    &__buttons {
+      padding-top: 7%;
+    }
+
+    &__button-back, &__button-next {
+      padding: 7px 3px 0 0;
+      margin-right: -13px;
+    }
+    
+    &__button-next {
+      padding: 5px 0 0 3px;
+    }
+
+    &__slider {
+      flex-grow: 1;
+    }
+  }
+}
+
+
+
+@media only screen and (min-width: 850px) {
+  .testimonial-carousel {
+
+    &__button-back, &__button-next {
+      padding: 5px 1px 0 0;
+      margin-right: -13px;
+    }
+
+    &__button-next {
+      padding: 8px 1px 0 0;
+    }
+
+    &__buttons {
+      padding-top: 10%;
+
+      &--for-home-page {
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+
+
+@media only screen and (min-width: 1000px) {
+  .testimonial-carousel {
+
+    &__buttons {
+      margin-left: 15px;
+      
+      &--for-testimonials-page {
+        padding-top: 50px;
+      }
+    }
+  }
+}
+
+
+
+@media only screen and (min-width: 1250px) {
+  .testimonial-carousel {
+
+    &--for-testimonials-page {
+      // Do not extend this from .testimonial-carousel !
+      min-height: 500px;
+      height: 535px;
+    }
+
+    &__buttons {
+      padding-top: 50px;
+      margin-left: 25px;
+      margin-right: 9px;
+      
+      &--for-testimonials-page {
+        padding-top: 82px;
+        margin-left: 10px;
+        margin-right: -2px;
+      }
+    }
+
+    &__button-back, &__button-next {
+      padding-right: 0;
+      
+      &--for-testimonials-page {
+        // No need to extend from .testimonial-carousel__button-back
+        transform: scale(0.8);
+      }
+    }
+  }
+}
+
+
+
+@media only screen and (min-width: 1350px) {
+  .testimonial-carousel {
+
+    &__buttons {
+      padding-top: 57px;
+      margin-right: 4px;
+
+      &--for-testimonials-page {
+        padding-top: 82px;
+        margin-left: 10px;
+      }
+      
+      &--for-home-page {
+        margin-left: 25px;
+        margin-right: 4px;
+      }
+    }
+
+    &__button-back, &__button-next {
+      transform: scale(0.8);
+      padding-left: 1px;
+      margin-right: -8px;
+    }
+  }
+}
+
+
+
+@media only screen and (min-width: 1400px) {
+  .testimonial-carousel {
+
+    &__buttons {
+
+      &--for-home-page {
+        padding-top: 143px;
+        margin-left: 38px;
+        margin-right: -2px;
+      }
+    }
+  }
+}

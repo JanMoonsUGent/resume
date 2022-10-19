@@ -1,0 +1,17 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160">
+    <g id="Group_31" data-name="Group 31" transform="translate(-516 -828)">
+        <g id="Group_21_Copy_3" data-name="Group 21 Copy 3" transform="translate(516 828)">
+            <rect id="Mask_Copy_11" data-name="Mask Copy 11" width="160" height="160" fill="#bbd0fb"/>
+        </g>
+        <path id="Path" d="M92.776,31.754A16.524,16.524,0,0,0,77.995,15.178,16.452,16.452,0,0,0,61.789,0a16.27,16.27,0,0,0-14.74,9.649,16.729,16.729,0,0,0-31.813,5.518A16.7,16.7,0,0,0,0,31.754,16.507,16.507,0,0,0,3.768,42.266a16.588,16.588,0,0,0,6.121,25.7,16.586,16.586,0,0,0,9.7,21.827,16.45,16.45,0,0,0,6.524,1.028,16.7,16.7,0,0,0,20.934,1.87,15.914,15.914,0,0,0,20.366-1.87,15.729,15.729,0,0,0,6.328-1.038A16.7,16.7,0,0,0,84.353,74.195a16.92,16.92,0,0,0-1.187-6.238A16.839,16.839,0,0,0,89.1,42.266,16.715,16.715,0,0,0,92.776,31.754Z" transform="translate(548.236 860.629)" fill="#0f56e4" stroke="#001c54" stroke-miterlimit="10" stroke-width="2"/>
+        <path id="Line_10" data-name="Line 10" d="M20.565,0V5.078H10.221V0H0" transform="translate(573.985 892.275)" fill="none" stroke="#001c54" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+        <path id="Line_10_Copy" data-name="Line 10 Copy" d="M30.074.5H0" transform="translate(548.432 912.611)" fill="none" stroke="#001c54" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+        <path id="Line_10_Copy_2" data-name="Line 10 Copy 2" d="M42.531,0H31.88V8.947H0v6.04" transform="translate(573.322 921.068)" fill="none" stroke="#001c54" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+        <path id="Line_10_Copy_3" data-name="Line 10 Copy 3" d="M25.233,0H0V5.035" transform="translate(594.55 888.344)" fill="none" stroke="#001c54" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+        <circle id="Oval" cx="3.931" cy="3.931" r="3.931" transform="translate(566.713 888.147)" fill="#fff" stroke="#001c54" stroke-miterlimit="10" stroke-width="2"/>
+        <circle id="Oval_Copy_3" data-name="Oval Copy 3" cx="3.931" cy="3.931" r="3.931" transform="translate(617.425 884.609)" fill="#fff" stroke="#001c54" stroke-miterlimit="10" stroke-width="2"/>
+        <circle id="Oval_Copy_4" data-name="Oval Copy 4" cx="3.931" cy="3.931" r="3.931" transform="translate(610.742 916.845)" fill="#fff" stroke="#001c54" stroke-miterlimit="10" stroke-width="2"/>
+        <circle id="Oval_Copy" data-name="Oval Copy" cx="3.931" cy="3.931" r="3.931" transform="translate(575.361 908.983)" fill="#fff" stroke="#001c54" stroke-miterlimit="10" stroke-width="2"/>
+        <circle id="Oval_Copy_2" data-name="Oval Copy 2" cx="3.931" cy="3.931" r="3.931" transform="translate(569.464 934.142)" fill="#fff" stroke="#001c54" stroke-miterlimit="10" stroke-width="2"/>
+    </g>
+</svg>

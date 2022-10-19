@@ -1,0 +1,135 @@
+﻿@import "../../../styles/font-mixins.scss";
+@import "../../../styles/colors.scss";
+
+
+.open-positions {
+  max-width: 1440px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 35px 17px 40px 18px;
+  background-color: $color-blue-very-light;
+
+  &--with-navigator {
+    @extend .open-positions;
+  }
+
+  &__title {
+    max-width: 500px;
+    margin-bottom: 30px;
+    @include title-font;
+  }
+
+  &__text {
+    margin: auto auto 40px;
+    padding-right: 10px;
+    @include slightly-larger-text-font;
+  }
+
+  &__positions {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+
+    &--with-navigator {
+      @extend .open-positions__positions;
+    }
+  }
+}
+
+
+
+@media only screen and (min-width: 500px) {
+  .open-positions {
+    padding: 40px 40px 50px 40px;
+
+    &__text {
+      width: 400px;
+      padding: 30px 10px 80px 10px;
+    }
+  }
+}
+
+
+
+@media only screen and (min-width: 800px) {
+  .open-positions {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    padding: 40px 50px 70px 50px;
+
+    &__title {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 50px;
+      text-align: center;
+    }
+
+    &__text {
+      width: 600px;
+      margin: auto;
+      padding: 0px 70px 120px 70px;
+      @include slightly-larger-text-font;
+    }
+
+    &__positions {
+      width: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+
+      &--with-navigator {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+
+
+@media only screen and (min-width: 850px) {
+  .open-positions {
+
+    &--with-navigator {
+      padding-left: 40px;
+      padding-right: 20px;
+    }
+  }
+}
+
+
+
+@media only screen and (min-width: 1250px) {
+  .open-positions {
+    margin-top: 90px;
+    margin-bottom: 90px;
+    padding: 40px 70px 120px 70px;
+
+    &--with-navigator {
+      padding-left: 40px;
+      padding-right: 20px;
+    }
+
+    &__title {
+      max-width: 580px;
+      margin-bottom: 70px;
+    }
+
+    &__text {
+      width: 900px;
+      margin: auto;
+      padding: 0px 70px 120px 70px;
+      @include slightly-larger-text-font;
+    }
+
+    &__positions {
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 40px;
+      align-items: stretch;
+
+      &--with-navigator {
+        grid-template-columns: 1fr;
+        grid-gap: 35px;
+      }
+    }
+  }
+}

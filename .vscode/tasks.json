@@ -1,0 +1,10 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "command": "Remove-Item -Path .next -Force -Recurse",
+            "label": "cleanup"
+        }
+    ]
+}

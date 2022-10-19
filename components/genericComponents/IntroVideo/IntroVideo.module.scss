@@ -1,0 +1,250 @@
+@import "../../../styles/colors.scss";
+
+
+.intro-video {
+  display: block;
+  position: relative;
+  font-family: "Atlas Grotesk", sans-serif;
+  padding:0;
+  cursor:pointer;
+  
+  &__play-icon-wrapper {
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    transform: translateY(-75%);
+    width: 179px;
+    height: 64px;
+
+    &--no-undertext {
+      @extend .intro-video__play-icon-wrapper;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__play-icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  &__play-icon-text {
+    position: absolute;
+    top: 50%;
+    left: 64px;
+    transform: translateY(-50%);
+    font-family: "Atlas Grotesk", sans-serif;
+    font-size: 22px;
+    color: white;
+  }
+
+  &__left-marks{
+    position: absolute;
+    bottom: 0;
+    left: -10px;
+    transform: rotateZ(-25deg);
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+    
+    &--no-undertext {
+      @extend .intro-video__left-marks;
+      bottom: -27px;
+    }
+  }
+
+  &__right-marks{
+    position: absolute;
+    top: -30px;
+    right: -10px;
+    transform: rotateZ(-25deg);
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+  }
+
+
+  &__posterimage{
+    border: 2px solid #001c54;
+    height: 100%;
+    width: 100%;
+    border-radius: 14px;
+    background-color: $color-yellow-light;
+  }
+
+  &__video-player{
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.85);
+  }
+  
+  &__video-player-frame {
+    position: relative;
+    z-index: 1;
+    width: 480px;
+    height: 320px
+  }
+
+  &__video-player-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__video-playing{
+    display:flex;
+  }
+
+  &__video-stopped{
+    display: none;
+  }
+
+  &__watch-video-text{
+    position: relative;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 8px;
+  }
+}
+
+
+
+@media only screen and (min-width: 500px) {
+  .intro-video {
+    width: 400px;
+    
+    &__play-icon-wrapper {
+      left: -18px;
+    }
+
+    &__left-marks{
+      bottom: 6px;
+      left: -25px;
+      transform: rotateZ(0);
+
+      &--no-undertext {
+        bottom: -21px;
+      }
+    }
+
+    &__right-marks{
+      top: -24px;
+      right: -25px;
+      transform: rotateZ(0);
+    }
+  }
+}
+
+
+
+@media only screen and (min-width: 650px) {
+  .intro-video {
+    width: 450px;
+  }
+}
+
+
+
+@media only screen and (min-width: 850px) {
+  .intro-video {
+    width: 330px;
+    display: block;
+    padding: 40px;
+    
+    &__video-player-frame {
+      width: 640px;
+      height: 390px
+    }
+    
+    &__play-icon-wrapper {
+      left: 21px;
+    }
+  
+    &__left-marks{
+      bottom: 50px;
+      left: 20px;
+      width: 30px;
+      height: 30px;
+
+      &--no-undertext {
+        bottom: 23px;
+      }
+    }
+  
+    &__right-marks{
+      top: 18px;
+      right: 20px;
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .intro-video {
+    width: 430px;
+    padding: 50px;
+    
+    &__wach-video-text{
+      font-size: 18px;
+      padding-top: 9px;
+    }
+    
+    &__play-icon-wrapper {
+      left: 30px;
+    }
+  
+    &__left-marks{
+      bottom: 55px;
+      left: 25px;
+      width: 35px;
+      height: 35px;
+
+      &--no-undertext {
+        bottom: 28px;
+      }
+    }
+  
+    &__right-marks{
+      top: 25px;
+      right: 25px;
+      width: 35px;
+      height: 35px;
+    }
+  }
+}
+
+
+
+@media only screen and (min-width: 1250px) {
+  .intro-video {
+    width: 530px;
+
+    &__video-player-frame {
+      width: 800px;
+      height: 530px
+    }
+    
+    &__wach-video-text{
+      font-size: 20px;
+      padding-top: 10px;
+    }
+    
+    &__play-icon-wrapper {
+      left: 30px;
+    }
+  }
+}

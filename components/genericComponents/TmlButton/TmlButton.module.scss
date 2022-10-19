@@ -1,0 +1,82 @@
+﻿@import "../../../styles/colors";
+@import "../../../styles/font-mixins";
+
+
+@mixin tml-button-base($fontColor, $backgroundColor, $borderColor, $hoverFontColor, $hoverBackgroundColor, $hoverBorderColor) {
+  padding: 15px 30px 12px 30px;
+  border-radius: 26px;
+  font-family: "Atlas Grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: $fontColor;
+  cursor: pointer;
+  background-color: $backgroundColor;
+  border: solid 2px $borderColor;
+  
+  display: inline-block;
+  text-align: center;
+
+  &:active {
+    transform: perspective(1px) scale(0.975);
+  }
+
+  &:hover, &:active {
+    background-color: $hoverBackgroundColor;
+    color: $hoverFontColor;
+    border: solid 2px $hoverBorderColor;
+  }
+}
+
+.tml-button {
+  &--primary, &--black {
+    @include tml-button-base(white, $color-default, $color-default, $color-default, white, $color-default);
+  }
+
+  &--secondary {
+    @include tml-button-base($color-default, white, $color-default, white, $color-default, $color-default);
+  }
+
+  &--hover-blue {
+    @include tml-button-base($color-default, white, $color-default, $color-blue-normal, white, $color-blue-normal);
+  }
+
+  &--black-blue {
+    @include tml-button-base(white, $color-default, $color-default, $color-blue-normal, white, $color-blue-normal);
+  }
+
+  &--black-purple {
+    @include tml-button-base(white, $color-default, $color-default, $color-purple-normal, white, $color-purple-normal);
+  }
+
+  &--black-yellow {
+    @include tml-button-base(white, $color-default, $color-default, $color-yellow-normal, white, $color-yellow-normal);
+  }
+
+  &--black-red {
+    @include tml-button-base(white, $color-default, $color-default, $color-red-normal, white, $color-red-normal);
+  }
+
+  &--black-green {
+    @include tml-button-base(white, $color-default, $color-default, $color-green-normal, white, $color-green-normal);
+  }
+
+  &--blue {
+    @include tml-button-base(white, $color-blue-normal, $color-blue-normal, $color-blue-normal, white, $color-blue-normal);
+  }
+
+  &--purple {
+    @include tml-button-base(white, $color-purple-normal, $color-purple-normal, $color-purple-normal, white, $color-purple-normal);
+  }
+
+  &--yellow {
+    @include tml-button-base(white, $color-yellow-normal, $color-yellow-normal, $color-yellow-normal, white, $color-yellow-normal);
+  }
+
+  &--red {
+    @include tml-button-base(white, $color-red-normal, $color-red-normal, $color-red-normal, white, $color-red-normal);
+  }
+
+  &--green {
+    @include tml-button-base(white, $color-green-normal, $color-green-normal, $color-green-normal, white, $color-green-normal);
+  }
+}

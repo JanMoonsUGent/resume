@@ -1,0 +1,62 @@
+﻿@import "../../../styles/colors.scss";
+@import "../../../styles/font-mixins.scss";
+
+
+.highlighted-text {
+  width: 180px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:30px;
+  margin-bottom: 100px;
+
+  &__text {
+    position: relative;
+    @include big-text-font;
+    text-align: center;
+  }
+
+  &__highlighted-text {
+    color: $color-blue-normal;
+  }
+
+  &__image {
+    position: relative;
+    top: 0.14em;
+    left: 0.3em;
+    width: 1.36em;
+    margin-top: -0.35em;
+  }
+
+  &__arrow {
+    position: absolute;
+    bottom: -55px;
+    right: 15px;
+    height: 65px;
+  }
+}
+
+
+
+@media only screen and (min-width: 800px) {
+  .highlighted-text {
+    width: 220px;
+
+    &__arrow {
+      bottom: -80px;
+      height: auto;
+    }
+  }
+}
+
+
+
+@media only screen and (min-width: 1250px) {
+  .highlighted-text {
+    width: 280px;
+    margin-bottom: 168px;
+    
+    &__arrow {
+      right: 30px;
+    }
+  }
+}
