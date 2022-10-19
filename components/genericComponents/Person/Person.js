@@ -31,7 +31,7 @@ export default class Person extends Component {
 							))}
 						</div>
 						<div className={[css["box"], css["foot"]].join(" ")}>
-							<div>&copy; Jan Moons 2022</div>
+							<div>&copy; {this.props.blok.firstname} {this.props.blok.lastname} {new Date().getFullYear()}</div>
 						</div>
 					</div>
 				</div>
