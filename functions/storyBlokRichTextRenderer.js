@@ -4,8 +4,6 @@ import PropTypes from "prop-types";
 import {modifyStoryBlokImage, GetOriginalDimensions} from "./StoryBlokImageHelper";
 import "lazysizes";
 import "lazysizes/plugins/attrchange/ls.attrchange";
-import TestimonialCard from "../components/genericComponents/TestimonialCard/TestimonialCard";
-import LeftRightBlock from "../components/genericComponents/LeftRightBlock/LeftRightBlock";
 
 function MarkBoldResolver(children, boldClassName) {
 	return (
@@ -91,40 +89,6 @@ function BiColoredTitleNodeParagraphResolver(children, textClassName) {
 	);
 }
 
-function LeftRightBlockResolver(props) {
-	return (
-		<div>
-			<LeftRightBlock
-				blok={props}
-			/>
-		</div>
-	);
-}
-
-function TestimonialResolver(props) {
-	return (
-		<div className={css["rich-text__testimonial-card"]}>
-			<TestimonialCard
-				speakerImg={props.testimonialpicture}
-				speakerName={props.testimonialgiver}
-				speakerFunction={props.testimonialgiverrole}
-				testimonialText={props.testimonial}
-				basicLayout="compact"
-				boxedInAccent={true}
-				fontColor="#001C54"
-				accentDomainColor="yellow"
-				imgBorderDomainColor="normal-blue"
-			/>
-		</div>
-	);
-}
-
-TestimonialResolver.propTypes = {
-	testimonialpicture: PropTypes.object,
-	testimonialgiver: PropTypes.string,
-	testimonialgiverrole: PropTypes.string,
-	testimonial: PropTypes.string
-};
 
 export function RichTextToHTML({
 	document,
@@ -158,10 +122,6 @@ export function RichTextToHTML({
 					[NODE_UL]: (children) => NodeUlResolver(children, ulClassName),
 					[NODE_LI]: (children) => NodeLiResolver(children, liClassName),
 					[NODE_IMAGE]: (children, { src, alt, title }) => NodeImageResolver(children, { src, alt, title }, imgClassName, imageSizeLimit)
-				},
-				blokResolvers: {
-					["testimonial"]: (children) => TestimonialResolver(children),
-					["leftrightblock"]: (children) => LeftRightBlockResolver(children)
 				},
 				defaultStringResolver: NodeParagraphResolver
 			})}

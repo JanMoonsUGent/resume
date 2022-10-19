@@ -63,16 +63,16 @@ function getDefaultTags() {
 		"googlebot": "all",
 		"robots": "all",
 		// OpenGraph
-		"og:site_name": "The Master Labs",
-		"og:title": "The Master Labs",
+		"og:site_name": "My Resume",
+		"og:title": "My Resume",
 		"og:description": description,
 		"og:image": imageUrl,
 		"og:type": "website",
 		// Twitter
-		"twitter:site": "@TheMasterLabs",
+		"twitter:site": "@MyResume",
 		"twitter:card": "summary_large_image",
 		"twitter:image": imageUrl,
-		"twitter:title": "The Master Labs",
+		"twitter:title": "My Resume",
 		"twitter:description": description
 	};
 }

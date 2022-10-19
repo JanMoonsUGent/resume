@@ -20,27 +20,7 @@ export default async function handler(req, res) {
   paths.push(homelink);
 
   await storyblokApi.get(`cdn/links`, {
-    starts_with: "pages",
-  }).then((result) => {
-    Object.keys(result.data.links).forEach((linkKey) => {
-      if (!result.data.links[linkKey].is_folder && result.data.links[linkKey].published) {
-        paths.push(result.data.links[linkKey]);
-      }
-    });
-  });
-
-  await storyblokApi.get(`cdn/links`, {
-    starts_with: "services",
-  }).then((result) => {
-    Object.keys(result.data.links).forEach((linkKey) => {
-      if (!result.data.links[linkKey].is_folder && result.data.links[linkKey].published) {
-        paths.push(result.data.links[linkKey]);
-      }
-    });
-  });
-
-  await storyblokApi.get(`cdn/links`, {
-    starts_with: "positions",
+    starts_with: "people",
   }).then((result) => {
     Object.keys(result.data.links).forEach((linkKey) => {
       if (!result.data.links[linkKey].is_folder && result.data.links[linkKey].published) {
@@ -68,7 +48,7 @@ export default async function handler(req, res) {
       .map((url) => {
         return `
             <url>
-              <loc>https://www.themasterlabs.com/${url.slug}</loc>
+              <loc>https://resume.vercel.app/${url.slug}</loc>
               <lastmod>${new Date().toISOString()}</lastmod>
               <changefreq>weekly</changefreq>
               <priority>1.0</priority>
