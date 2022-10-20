@@ -14,7 +14,7 @@ export default class Person extends Component {
 				<div {...storyblokEditable(this.props.blok)} className={css["wrapper"]}>
 					<div className={css["content"]}>
 						<div className={[css["box"], css["head"]].join(" ")}>
-							<h1>Resume {this.props.blok.firstname} {this.props.blok.lastname}</h1>
+							<h1>C.V. {this.props.blok.firstname} {this.props.blok.lastname}</h1>
 						</div>
 						<div className={[css["box"], css["sidebar"]].join(" ")}>
 							<div className={css["personalimage"]}><img src={this.props.blok.image.filename} /></div>
