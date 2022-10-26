@@ -1,5 +1,4 @@
 import '../styles/globals.css'
-import "../styles/fonts.scss";
 
 import { storyblokInit, apiPlugin } from "@storyblok/react";
 import Person from "../components/genericComponents/Person/Person";

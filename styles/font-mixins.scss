@@ -4,7 +4,7 @@
 /* ========== Titles ========== */
 
 @mixin main-title-font($color: $color-default) {
-  font-family: "Brown LL", sans-serif;
+  font-family: "Silkscreen", sans-serif;
   font-weight: 800;
   font-size: 38px;
   line-height: 44px;
@@ -21,38 +21,8 @@
   }
 }
 
-
-//@mixin main-tmc-title-font($color: $color-default) {
-//  @include title-font-family();
-//  font-weight: 700;
-//  font-size: 32px;
-//  line-height: 40px;
-//  color: $color;
-//
-//  @media only screen and (min-width: 800px) {
-//    font-size: 46px;
-//    line-height: 60px;
-//  }
-//}
-//
-//
-//@mixin main-subtitle-font($color: $color-default) {
-//  @include text-font-family();
-//  font-weight: 400;
-//  font-size: 18px;
-//  line-height: 28px;
-//  color: $color;
-//
-//  @media only screen and (min-width: 800px) {
-//    font-size: 20px;
-//    line-height: 32px;
-//  }
-//}
-//
-//
-
 @mixin pretitle-font($color: $color-default) {
-  font-family: "Brown LL", sans-serif;
+  font-family: "Silkscreen", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 25px;
@@ -71,7 +41,7 @@
 }
 
 @mixin title-font($color: $color-default) {
-  font-family: "Brown LL", sans-serif;
+  font-family: "Silkscreen", sans-serif;
   font-weight: 800;
   font-size: 28px;
   line-height: 34px;
@@ -88,70 +58,8 @@
   }
 }
 
-@mixin posttitle-font($color: $color-default) {
-  font-family: "Brown LL", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 34px;
-  color: $color;
-
-  @media only screen and (min-width: 800px) {
-    font-size: 18px;
-    line-height: 44px;
-  }
-
-  @media only screen and (min-width: 1250px) {
-    font-size: 26px;
-    line-height: 52px;
-  }
-}
-
-@mixin posttitle-font-small($color: $color-default) {
-  font-family: "Brown LL", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 25px;
-  color: $color;
-
-  @media only screen and (min-width: 800px) {
-    font-size: 16px;
-    line-height: 30px;
-  }
-
-  @media only screen and (min-width: 1250px) {
-    font-size: 18px;
-    line-height: 36px;
-  }
-}
-
-//ToDo als het blijkt dat de subtitles in heroes niet overeenkomt met de track-module-title, moet je dit aanpassen!
-@mixin subtitle-font($color: $color-default) {
-  font-family: "Brown LL", sans-serif;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 34px;
-  color: $color;
-
-  @media only screen and (min-width: 800px) {
-    font-size: 28px;
-    line-height: 40px;
-  }
-
-  @media only screen and (min-width: 1250px) {
-    font-size: 32px;
-    line-height: 45px;
-  }
-}
-
-
-@mixin bold-subtitle-font($color: $color-default) {
-  @include subtitle-font($color);
-  font-weight: 800;
-}
-
-
 @mixin small-title-font($color: $color-default) {
-  font-family: "Brown LL", sans-serif;
+  font-family: "Silkscreen", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
@@ -170,7 +78,7 @@
 
 
 @mixin very-small-title-font($color: $color-default) {
-  font-family: "Brown LL", sans-serif;
+  font-family: "Silkscreen", sans-serif;
   font-weight: 700;
   font-size: 17px;
   line-height: 28px;
@@ -186,11 +94,46 @@
   }
 }
 
+@mixin posttitle-font($color: $color-default) {
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 34px;
+  color: $color;
+
+  @media only screen and (min-width: 800px) {
+    font-size: 18px;
+    line-height: 44px;
+  }
+
+  @media only screen and (min-width: 1250px) {
+    font-size: 26px;
+    line-height: 52px;
+  }
+}
+
+@mixin posttitle-font-small($color: $color-default) {
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  color: $color;
+
+  @media only screen and (min-width: 800px) {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  @media only screen and (min-width: 1250px) {
+    font-size: 18px;
+    line-height: 36px;
+  }
+}
 
 /* ========== Texts ========== */
 
 @mixin text-font($color: $color-default) {
-  font-family: "Atlas Grotesk", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -207,27 +150,9 @@
   }
 }
 
-@mixin slightly-larger-text-font($color: $color-default) {
-  font-family: "Atlas Grotesk", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: $color!important;
-
-  @media only screen and (min-width: 800px) {
-    font-size: 18px;
-    line-height: 29px;
-  }
-
-  @media only screen and (min-width: 1250px) {
-    font-size: 20px;
-    line-height: 33px;
-  }
-}
-
 
 @mixin large-text-font($color: $color-default) {
-  font-family: "Brown LL", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 21px;
   line-height: 28px;
@@ -244,99 +169,10 @@
   }
 }
 
-
-@mixin larger-text-font($color: $color-default) {
-  font-family: "Brown LL", sans-serif;
-  font-weight: 800;
-  font-size: 26px;
-  line-height: 32px;
-  color: $color;
-
-  @media only screen and (min-width: 800px) {
-    font-size: 32px;
-    line-height: 40px;
-  }
-
-  @media only screen and (min-width: 1250px) {
-    font-size: 35px;
-    line-height: 45px;
-  }
-}
-
-
-@mixin huge-text-font($color: $color-default) {
-  font-family: "Brown LL", sans-serif !important;
-  font-weight: 800!important;
-  font-size: 28px!important;
-  line-height: 34px!important;
-  color: $color!important;
-
-  @media only screen and (min-width: 800px) {
-    font-size: 35px!important;
-    line-height: 45px!important;
-  }
-
-  @media only screen and (min-width: 1250px) {
-    font-size: 41px!important;
-    line-height: 54px!important;
-  }
-}
-
-@mixin big-text-font($color: $color-default) {
-  font-family: "Brown LL", sans-serif!important;
-  font-weight: 800!important;
-  font-size: 24px!important;
-  line-height: 34px!important;
-  color: $color!important;
-
-  @media only screen and (min-width: 800px) {
-    font-size: 32px!important;
-    line-height: 40px!important;
-  }
-
-  @media only screen and (min-width: 1250px) {
-    font-size: 38px!important;
-    line-height: 50px!important;
-  }
-}
-
-@mixin small-text-font($color: $color-default) {
-  font-family: "Brown LL", sans-serif!important;
-  font-weight: 400!important;
-  font-size: 14px!important;
-  line-height: 18px!important;
-  color: $color!important;
-
-  @media only screen and (min-width: 800px) {
-    font-size: 15px!important;
-    line-height: 26px!important;
-  }
-}
-
-
-@mixin very-bold-text-font($color: $color-default) {
-  @include text-font($color);
-  font-weight: 800!important;
-}
-
-
-@mixin info-text-font($color: $color-default) {
-  font-family: "Brown LL", sans-serif!important;
-  font-weight: 500!important;
-  font-size: 16px!important;
-  line-height: 32px!important;
-  color: $color!important;
-
-  @media only screen and (min-width: 800px) {
-    font-size: 18px!important;
-  }
-}
-
-
 /* ========== Card-texts ========== */
 
 @mixin card-title-font($color: $color-default) {
-  font-family: "Brown LL", sans-serif;
+  font-family: "Silkscreen", sans-serif;
   font-weight: 800;
   font-size: 24px;
   line-height: 30px;
@@ -344,7 +180,7 @@
 }
 
 @mixin card-title-font-large($color: $color-default) {
-  font-family: "Brown LL", sans-serif;
+  font-family: "Silkscreen", sans-serif;
   font-weight: 800;
   font-size: 35px;
   line-height: 40px;
@@ -352,7 +188,7 @@
 }
 
 @mixin card-title-font-small($color: $color-default) {
-  font-family: "Brown LL", sans-serif;
+  font-family: "Silkscreen", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 34px;
@@ -360,7 +196,7 @@
 }
 
 @mixin card-info-font-small($color: $color-default) {
-  font-family: "Atlas Grotesk", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 25px;
@@ -368,7 +204,7 @@
 }
 
 @mixin card-info-font($color: $color-default) {
-  font-family: "Atlas Grotesk", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 25px;
@@ -376,7 +212,7 @@
 }
 
 @mixin card-info-font-large($color: $color-default) {
-  font-family: "Atlas Grotesk", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
@@ -385,7 +221,7 @@
 
 
 @mixin card-tagline-font($color: $color-default) {
-  font-family: "Brown LL", sans-serif;
+  font-family: "Silkscreen", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
@@ -394,7 +230,7 @@
 
 
 @mixin value-card-font($color: $color-default) {
-  font-family: "Brown LL", sans-serif;
+  font-family: "Silkscreen", sans-serif;
   font-weight: 400;
   font-size: 17px;
   line-height: 27px;
@@ -403,7 +239,7 @@
 
 
 @mixin technique-card-font($color: $color-default) {
-  font-family: "Brown LL", sans-serif;
+  font-family: "Silkscreen", sans-serif;
   font-weight: 800;
   font-size: 20px;
   line-height: 30px;
@@ -412,7 +248,7 @@
 
 
 @mixin feature-card-title-font($color: $color-default) {
-  font-family: "Brown LL", sans-serif;
+  font-family: "Silkscreen", sans-serif;
   font-weight: 800;
   font-size: 25px;
   line-height: 30px;
@@ -421,473 +257,9 @@
 
 
 @mixin feature-card-text-font($color: $color-default) {
-  font-family: "Atlas Grotesk", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 17px;
   line-height: 24px;
   color: $color;
 }
-
-
-//@mixin old-feature-card-font($color: $color-default) {
-//  font-family: "Brown LL", sans-serif;
-//  font-weight: 500;
-//  font-size: 20px;
-//  line-height: 30px;
-//  color: $color;
-//}
-
-
-@mixin position-card-name-font($color: $color-default) {
-  font-family: "Brown LL", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  color: $color;
-
-  @media only screen and (min-width: 800px) {
-    font-size: 20px;
-    line-height: 28px;
-  }
-
-  @media only screen and (min-width: 1250px) {
-    font-size: 22px;
-    line-height: 30px;
-  }
-}
-
-
-@mixin position-card-text-font($color: $color-default) {
-  font-family: "Atlas Grotesk", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  color: $color;
-
-  @media only screen and (min-width: 800px) {
-    font-size: 17px;
-    line-height: 22px;
-  }
-
-  @media only screen and (min-width: 1250px) {
-    font-size: 16px;
-    line-height: 24px;
-  }
-}
-
-
-@mixin testimonial-card-content-font($color: $color-default) {
-  font-family: "Brown LL", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 26px;
-  color: $color;
-
-  @media only screen and (min-width: 800px) {
-    font-size: 18px;
-    line-height: 28px;
-  }
-
-  @media only screen and (min-width: 1250px) {
-    font-size: 23px;
-    line-height: 36px;
-  }
-}
-
-@mixin testimonial-card-speaker-font($color: $color-default) {
-  font-family: "Brown LL", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  color: $color;
-
-  @media only screen and (min-width: 800px) {
-    font-size: 15px;
-    line-height: 22px;
-  }
-}
-
-@mixin teacher-quote-content-font($color: $color-default) {
-  font-family: "Brown LL", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 26px;
-  color: $color;
-
-  @media only screen and (min-width: 800px) {
-    font-size: 21px;
-    line-height: 31px;
-  }
-
-  @media only screen and (min-width: 1250px) {
-    font-size: 23px;
-    line-height: 36px;
-  }
-}
-
-@mixin teacher-quote-name-font($color: $color-default) {
-  font-family: "Brown LL", sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 20px;
-  color: $color;
-
-  @media only screen and (min-width: 800px) {
-    font-size: 15px;
-    line-height: 22px;
-  }
-}
-
-@mixin teacher-quote-function-font($color: $color-default) {
-  font-family: "Brown LL", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  color: $color;
-
-  @media only screen and (min-width: 800px) {
-    font-size: 15px;
-    line-height: 22px;
-  }
-}
-
-@mixin learning-process-step-font($color: $color-default) {
-  font-family: "Brown LL", sans-serif;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 26px;
-  color: $color;
-
-  @media only screen and (min-width: 800px) {
-    font-size: 25px;
-    line-height: 30px;
-  }
-
-  @media only screen and (min-width: 1250px) {
-    font-size: 28px;
-    line-height: 33px;
-  }
-}
-
-
-/* ========== Aside box texts ========== */
-
-@mixin navigator-box-text-font($color: $color-default) {
-  font-family: "Brown LL", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 26px;
-  color: $color;
-}
-
-
-@mixin navigator-box-title-font($color: $color-default) {
-  font-family: "Brown LL", sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 26px;
-  color: $color;
-}
-
-
-/* ========== Header texts ========== */
-
-@mixin header-font($color: $color-default) {
-  font-family: "Brown LL", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  color: $color;
-}
-
-
-@mixin header-expanded-font($color: $color-default) {
-  font-family: "Brown LL", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 26px;
-  color: $color;
-}
-
-
-@mixin header-tmla-font($color: $color-default) {
-  font-family: "Brown LL", sans-serif;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 26px;
-  color: $color;
-}
-
-
-/* ========== Footer texts ========== */
-
-@mixin footer-font($color: $color-default) {
-  font-family: "Brown LL", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 32px;
-
-  @media only screen and (min-width: 800px) {
-    font-size: 16px;
-    line-height: 38px;
-  }
-}
-
-
-@mixin footer-subtitle-font($color: $color-default) {
-  font-family: "Brown LL", sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 38px;
-
-  @media only screen and (min-width: 800px) {
-    font-size: 16px;
-    line-height: 38px;
-  }
-}
-
-
-@mixin footer-policies-font($color: $color-default) {
-  font-family: "Brown LL", sans-serif;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 30px;
-
-  @media only screen and (min-width: 800px) {
-    font-size: 14px;
-    line-height: 38px;
-  }
-}
-
-
-/* ========== Cookie Policy ========== */
-
-@mixin cookie-title($color: $color-default){
-  font-family: "Brown LL", sans-serif;
-  font-size: 26px;
-  line-height: 40px;
-  color: $color;
-
-  @media only screen and (min-width: 800px){
-    font-size: 30px;
-  }
-}
-
-
-@mixin cookie-text($color: $color-default){
-  font-family: "Brown LL", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 26px;
-  color: $color;
-}
-
-
-@mixin cookie-list($color: $color-default){
-  font-family: "Brown LL", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 26px;
-  color: $color;
-}
-
-
-@mixin cookie-type-title($color: $color-default){
-  font-family: "Brown LL", sans-serif;
-  font-size: 30px;
-  line-height: 40px;
-  color: $color;
-}
-
-
-@mixin cookie-type-text($color: $color-default){
-  font-family: "Brown LL", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 26px;
-  color: $color;
-}
-
-
-@mixin cookiebar-font($color: $color-default){
-  font-family: "Brown LL", sans-serif;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 16px;
-  color: $color;
-
-  @media only screen and (min-width: 800px) {
-    font-size: 14px;
-    line-height: 22px;
-  }
-}
-
-
-/* ========== Other fonts ========== */
-
-@mixin type-name-font($color: $color-default) {
-  font-family: "Brown LL", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 32px;
-  color: $color;
-
-  @media only screen and (min-width: 800px) {
-    font-size: 17px;
-    line-height: 32px;
-  }
-
-  @media only screen and (min-width: 1250px) {
-    font-size: 18px;
-    line-height: 32px;
-  }
-}
-
-@mixin service-block-list-font($color: $color-default) {
-  font-family: "Brown LL", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 25px;
-  color: $color;
-
-  @media only screen and (min-width: 1250px) {
-    font-size: 16px;
-  }
-}
-
-@mixin service-block-list-smalltitle-font($color: $color-default) {
-  font-family: "Brown LL", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 25px;
-  color: $color;
-
-  @media only screen and (min-width: 1250px) {
-    font-size: 19px;
-  }
-}
-
-//@mixin toc-li-font($color: $color-default) {
-//  @include text-font-family();
-//  font-weight: 400;
-//  font-size: 16px;
-//  line-height: 20px;
-//  color: $color;
-//
-//  @media only screen and (min-width: 800px) {
-//    font-size: 20px;
-//    line-height: 30px;
-//  }
-//}
-//
-//
-//@mixin toc-li-font-l2($color: $color-default) {
-//  @include text-font-family();
-//  font-weight: 400;
-//  font-size: 14px;
-//  line-height: 18px;
-//  color: $color;
-//
-//  @media only screen and (min-width: 800px) {
-//    font-size: 16px;
-//    line-height: 28px;
-//  }
-//}
-//
-//
-//@mixin toc-nugget-info-font($color: $color-default) {
-//  @include text-font-family();
-//  font-weight: 400;
-//  font-size: 12px;
-//  line-height: 20px;
-//  color: $color;
-//
-//  @media only screen and (min-width: 800px) {
-//    font-size: 14px;
-//    line-height: 31px;
-//  }
-//}
-//
-//
-//@mixin certification-card-title-font($color: $color-default) {
-//  @include text-font-family();
-//  font-weight: 500;
-//  font-size: 16px;
-//  line-height: 24px;
-//  color: $color-default;
-//
-//  @media only screen and (min-width: 800px) {
-//    font-size: 18px;
-//    line-height: 26px;
-//  }
-//
-//  @media only screen and (min-width: 1250px) {
-//    font-size: 20px;
-//    line-height: 28px;
-//  }
-//}
-//
-//
-//@mixin certification-card-credits-font($color: $color-default) {
-//  @include text-font-family();
-//  font-weight: 600;
-//  font-size: 14px;
-//  color: $color;
-//
-//  @media only screen and (min-width: 800px) {
-//    font-size: 16px;
-//  }
-//
-//  @media only screen and (min-width: 1250px) {
-//    font-size: 18px;
-//  }
-//}
-//
-//
-//@mixin teacher-card-name-font($color: $color-default) {
-//  @include text-font-family();
-//  font-weight: 700;
-//  font-size: 16px;
-//  line-height: 24px;
-//  color: $color-default;
-//
-//  @media only screen and (min-width: 800px) {
-//    font-size: 18px;
-//    line-height: 26px;
-//  }
-//
-//  @media only screen and (min-width: 1250px) {
-//    font-size: 20px;
-//    line-height: 28px;
-//  }
-//}
-//
-//
-//@mixin teacher-card-profession-font($color: $color-default) {
-//  @include text-font-family();
-//  font-weight: 700;
-//  font-size: 14px;
-//  line-height: 20px;
-//  color: $color;
-//
-//  @media only screen and (min-width: 800px) {
-//    font-size: 16px;
-//    line-height: 24px;
-//  }
-//
-//  @media only screen and (min-width: 1250px) {
-//    font-size: 18px;
-//    line-height: 28px;
-//  }
-//}
-//
-//
-//@mixin algolia-tag-font($color: $color-default) {
-//  @include text-font-family();
-//  font-weight: 500;
-//  font-size: 12px;
-//  line-height: 21px;
-//  letter-spacing: 1px;
-//  text-transform: uppercase;
-//  color: $color;
-//}
