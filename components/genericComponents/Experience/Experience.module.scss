@@ -12,7 +12,7 @@
 }
 
 .experiencedate {
-  background-color: $color-blue-light;
+  background-color: $color-green-light;
   font-size: 16x;
   border-radius: 20px;
   padding: 5px 10px;
@@ -20,5 +20,5 @@
 }
 
 .experiencetitle {
-  @include very-small-title-font($color-grey-normal);
+  @include very-small-title-font($color-red-normal);
 }
