@@ -1,4 +1,5 @@
 ﻿@import "../../../styles/colors.scss";
+@import "../../../styles/font-mixins.scss";
 
 
 .experienceitem {
@@ -11,7 +12,7 @@
 }
 
 .experiencedate {
-  background-color: rgb(238, 238, 238);
+  background-color: $color-green-light;
   font-size: 16x;
   border-radius: 20px;
   padding: 5px 10px;
@@ -19,6 +20,5 @@
 }
 
 .experiencetitle {
-  font-size: 16x;
-  font-weight: 700;
+  @include very-small-title-font($color-red-normal);
 }
