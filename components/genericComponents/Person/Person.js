@@ -17,7 +17,7 @@ export default class Person extends Component {
 							<h1>Resume {this.props.blok.title} {this.props.blok.lastname} {this.props.blok.firstname}</h1>
 						</div>
 						<div className={[css["box"], css["sidebar"]].join(" ")}>
-							<div className={css["personalimage"]}><img src={this.props.blok.photo.filename} /></div>
+							<div className={css["personalimage"]}><img src={this.props.blok.image.filename} /></div>
 							<div className={css["personaldetails"]}>
 								<div className={css["personaldetailitem"]}>{this.props.blok.title} {this.props.blok.firstname} {this.props.blok.lastname}</div>
 								<div className={css["personaldetailitem"]}>{this.props.blok.dateofbirth}</div>
