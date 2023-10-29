@@ -7,7 +7,7 @@ export default class Person extends Component {
 	constructor(props) {
 		super(props);
 	}
-
+	//comment by Jan
 	render() {
 		return (
 			<>
