@@ -12,6 +12,7 @@ export default class Experience extends Component {
 	render() {
 		return (
 			<>
+				<div></div>
 				<div {...storyblokEditable(this.props.blok)} className={css["experienceitem"]}>
 					<div className={css["experienceheader"]}>
 						<span className={css["experiencedate"]}>{this.props.blok.startdate} - {this.props.blok.enddate}</span>
